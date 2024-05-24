@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="NopCommerce" parallel="false" thread-count="3">
+    <listeners>
+        <listener class-name="commons.MethodListener"/>
+    </listeners>
+
+    <test name="Run on FIREFOX">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="common.nopcommerce.Nop_Register_Cookie"></class>
+            <class name="nopcommerceuser.User_Order"></class>
+        </classes>
+    </test>
+</suite>
