@@ -1,4 +1,4 @@
 package com.panda.pageUIs.user;
 
-public class PandaUserHomePageUI {
+public class UserHomePageUI {
 }

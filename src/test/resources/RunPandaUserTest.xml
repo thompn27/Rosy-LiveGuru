@@ -8,11 +8,15 @@
 
     <test name="Run on FIREFOX">
         <parameter name="browser" value="firefox"/>
+        <!--<packages>
+            <package name="com.panda.user"></package>
+        </packages>-->
         <classes>
-            <class name="com.panda.user.PandaUserRegister"></class>
+            <class name="com.panda.user.PandaUser_01_Register"></class>
+            <class name="com.panda.user.PandaUser_02_Login"></class>
         </classes>
     </test>
-    <test name="Run on CHROME">
+    <!--<test name="Run on CHROME">
         <parameter name="browser" value="chrome" />
         <classes>
             <class name="com.panda.user.PandaUserRegister"></class>
@@ -29,5 +33,5 @@
         <classes>
             <class name="com.panda.user.PandaUserRegister"></class>
         </classes>
-    </test>
+    </test>-->
 </suite>
